@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "SubShine",
+  "version": "1.0",
+
+  "description": "Highlights YouTube videos by people you subscribe to.",
+
+  "icons": {
+    "48": "icons/subshine_icon_48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["subshine.js"]
+    }
+  ]
+
+}
